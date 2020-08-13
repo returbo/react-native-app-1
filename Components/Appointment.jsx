@@ -1,22 +1,30 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { View } from 'react-native';
 import styled from "styled-components/native";
 
+import GreyText from "./GreyText";
+import Badge from "./Badge";
 
-const Appointment = ({ user, diagnosis, active, time }) => {
+
+const Appointment = ({ item, navigation }) => {
+
+  const { user, diagnosis, active, time } = item;
+
   return (
-        <GroupItem>
-          <Avatar
-            source={{
-              uri: user.avatar
-            }}
-          />
-          <View style={{ flex: 1 }}>
-            <FullName>{user.fullname}</FullName>
-            <GrayText>{diagnosis}</GrayText>
-          </View>
-          <GroupDate active={active}>{time}</GroupDate>
-        </GroupItem>
+    <GroupItem
+      onPress={() => navigation.navigate('Patient', {...item})}
+    >
+      <Avatar
+        source={{
+          uri: user.avatar
+        }}
+      />
+      <View style={{ flex: 1 }}>
+        <FullName>{user.fullname}</FullName>
+        <GreyText>{diagnosis}</GreyText>
+      </View>
+      <Badge active={active}>{time}</Badge>
+    </GroupItem>
   )
 };
 
@@ -25,24 +33,6 @@ Appointment.defaultProps = {
   title: "Untitle",
   items: [],
 }
-
-
-const GroupDate = styled.Text`
-  background: ${props => props.active ? "#2a86ff" : "#E9F5FF"};
-  color: ${props => props.active ? "#fff" : "#4294ff"};
-  border-radius: 18px;
-  font-weight: 600;
-  font-size: 14px;
-  width: 70px;
-  height: 32px;
-  text-align: center;
-  line-height: 30px;
-`;
-
-const GrayText = styled.Text`
-  font-size: 16px;
-  color: #8B979F;
-`;
 
 const FullName = styled.Text`
   font-weight: 600;
