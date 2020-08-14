@@ -8,7 +8,7 @@ import Badge from "./Badge";
 
 const Appointment = ({ item, navigation }) => {
 
-  const { user, diagnosis, active, time } = item;
+  const { user, hairstyle, time, is_active } = item;
 
   return (
     <GroupItem
@@ -21,9 +21,9 @@ const Appointment = ({ item, navigation }) => {
       />
       <View style={{ flex: 1 }}>
         <FullName>{user.fullname}</FullName>
-        <GreyText>{diagnosis}</GreyText>
+        <GreyText>{hairstyle}</GreyText>
       </View>
-      <Badge active={active}>{time}</Badge>
+      <Badge active={is_active}>{time}</Badge>
     </GroupItem>
   )
 };

@@ -6,7 +6,7 @@ import { View, Text } from 'react-native';
 
 const PatientScreen = ({ route }) => {
 
-  const { user, diagnosis, active, time } = route.params;
+  const { user } = route.params;
 
   return (
 
@@ -30,7 +30,9 @@ const PatientScreen = ({ route }) => {
       <PatientAppointments>
         <Container>
           <AppointmentCard>
-
+            <MoreButton>
+              <MaterialIcons name="more-vert" size={24} color="black" />
+            </MoreButton>
             <DebtGroup>
               <FontAwesome name="money" size={24} color="black" />
               <AppointmentCardLabel>
@@ -44,9 +46,13 @@ const PatientScreen = ({ route }) => {
                 Поручители: <Text style={{ fontWeight: 'bold' }}>есть</Text>
               </AppointmentCardLabel>
             </DebtGroup>
-            <DebtGroup style={{ justifyContent: 'space-between'}}>
-            <Badge style={{ width: 150 }} active>11.10.2019 - 15.40</Badge>
-            <Badge style={{ color: "green"}}>800р</Badge>
+            <DebtGroup style={{ justifyContent: 'space-between' }}>
+              <Badge style={{ width: 155 }} active>
+                11.10.2019 - 15.40
+            </Badge>
+              <Badge color="green">
+                800р
+              </Badge>
             </DebtGroup>
           </AppointmentCard>
         </Container>
@@ -56,6 +62,18 @@ const PatientScreen = ({ route }) => {
 
   )
 };
+
+
+const MoreButton = styled.TouchableOpacity`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 18px;
+  top:23px;
+  height: 32px;
+  width: 32px;
+`;
 
 const DebtGroup = styled.View`
   flex-direction: row;

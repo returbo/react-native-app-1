@@ -93,3 +93,154 @@ export const DATA = [
     ],
   },
 ];
+
+const x = [
+  {
+    "users": [
+      {
+        "_id": 0,
+        "avatar": "https://source.unsplash.com/random/100x100?face",
+        "fullname": "Katrina Ashley",
+        "phone": "+7 (960) 489-26-07"
+      },
+      {
+        "_id": 1,
+        "avatar": "https://source.unsplash.com/random/100x100?face",
+        "fullname": "Odom Harmon",
+        "phone": "+7 (841) 462-32-00"
+      },
+      {
+        "_id": 2,
+        "avatar": "https://source.unsplash.com/random/100x100?face",
+        "fullname": "Dorthy Michael",
+        "phone": "+7 (831) 482-32-46"
+      },
+      {
+        "_id": 3,
+        "avatar": "https://source.unsplash.com/random/100x100?face",
+        "fullname": "Rosalie Hines",
+        "phone": "+7 (993) 577-24-93"
+      },
+      {
+        "_id": 4,
+        "avatar": "https://source.unsplash.com/random/100x100?face",
+        "fullname": "Harrington Stanton",
+        "phone": "+7 (805) 534-23-70"
+      },
+      {
+        "_id": 5,
+        "avatar": "https://source.unsplash.com/random/100x100?face",
+        "fullname": "Julie Banks",
+        "phone": "+7 (871) 513-27-92"
+      },
+      {
+        "_id": 6,
+        "avatar": "https://source.unsplash.com/random/100x100?face",
+        "fullname": "Ladonna Marsh",
+        "phone": "+7 (998) 553-20-14"
+      },
+      {
+        "_id": 7,
+        "avatar": "https://source.unsplash.com/random/100x100?face",
+        "fullname": "Miranda Owens",
+        "phone": "+7 (951) 460-32-71"
+      },
+      {
+        "_id": 8,
+        "avatar": "https://source.unsplash.com/random/100x100?face",
+        "fullname": "Juliet Holland",
+        "phone": "+7 (923) 566-31-95"
+      },
+      {
+        "_id": 9,
+        "avatar": "https://source.unsplash.com/random/100x100?face",
+        "fullname": "Tameka Wyatt",
+        "phone": "+7 (947) 524-22-07"
+      }
+    ]
+  },
+  {
+    "appointments": [
+      {
+        "user_id": 0,
+        "is_active": true,
+        "priсe": 1000,
+        "hairstyle": "модельная",
+        "time": "15:11",
+        "date": "Thu Aug 06 2020 23:08:47 GMT+0000 (UTC)"
+      },
+      {
+        "user_id": 1,
+        "is_active": true,
+        "priсe": 600,
+        "hairstyle": "каре",
+        "time": "12:48",
+        "date": "Sun Aug 02 2020 12:43:10 GMT+0000 (UTC)"
+      },
+      {
+        "user_id": 2,
+        "is_active": true,
+        "priсe": 900,
+        "hairstyle": "полубокс",
+        "time": "10:48",
+        "date": "Sun Aug 09 2020 11:47:03 GMT+0000 (UTC)"
+      },
+      {
+        "user_id": 3,
+        "is_active": false,
+        "priсe": 800,
+        "hairstyle": "модельная",
+        "time": "14:30",
+        "date": "Sat Aug 29 2020 04:17:03 GMT+0000 (UTC)"
+      },
+      {
+        "user_id": 4,
+        "is_active": false,
+        "priсe": 250,
+        "hairstyle": "тенниска",
+        "time": "15:44",
+        "date": "Thu Aug 20 2020 23:39:24 GMT+0000 (UTC)"
+      },
+      {
+        "user_id": 5,
+        "is_active": false,
+        "priсe": 500,
+        "hairstyle": "тенниска",
+        "time": "20:52",
+        "date": "Sat Aug 15 2020 01:35:53 GMT+0000 (UTC)"
+      },
+      {
+        "user_id": 6,
+        "is_active": false,
+        "priсe": 450,
+        "hairstyle": "тенниска",
+        "time": "14:35",
+        "date": "Mon Aug 10 2020 08:29:06 GMT+0000 (UTC)"
+      },
+      {
+        "user_id": 7,
+        "is_active": false,
+        "priсe": 400,
+        "hairstyle": "модельная",
+        "time": "16:43",
+        "date": "Wed Aug 12 2020 03:34:09 GMT+0000 (UTC)"
+      },
+      {
+        "user_id": 8,
+        "is_active": false,
+        "priсe": 900,
+        "hairstyle": "тенниска",
+        "time": "16:45",
+        "date": "Mon Aug 10 2020 20:29:56 GMT+0000 (UTC)"
+      },
+      {
+        "user_id": 9,
+        "is_active": true,
+        "priсe": 400,
+        "hairstyle": "модельная",
+        "time": "11:52",
+        "date": "Fri Aug 28 2020 06:53:12 GMT+0000 (UTC)"
+      }
+    ]
+  }
+]
